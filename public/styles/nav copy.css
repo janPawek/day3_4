@@ -1,0 +1,91 @@
+navbar.css
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Search input */
+.nav-links input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Cart icon */
+.nav-links .cart-counter {
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.test{
+    color: white;
+}

@@ -1,0 +1,57 @@
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('styles/nav.css') }}">
+{% block javascripts %}
+    <script src="{{ asset('JS/navbar.js') }}"></script>{% endblock %}
+{% endblock %}
+{% block body %}
+<nav class="navbar">
+<div class="navbar__container dektop">
+        <a href="#" class="navbar__logo"> <i class="fas fa-home"></i></a>
+        <ul class="navbar__menu">
+            <li class="navbar__item"><a href="#" class="navbar__link active"></a></li>
+                <li class="navbar__item dropdown">
+                        <a href="#" class="navbar__link"><i class="fas fa-user"></i></a>
+                    <ul class="dropdown__menu">
+                        <li><a href="#">Update your profile</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link"> <i class="fas fa-shopping-cart"></i><span class="cart__counter">0</span></a>
+            </li>
+            <li class="navbar__item">
+                <div class="search__container">
+                    <input type="text" class="search__input" placeholder="Search">
+                    <i class="fas fa-search search__icon"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="mobile">
+        <a href="#" class="navbar__logo"> <i class="fas fa-home"></i></a>
+        <ul class="navbar__menu">
+            <li class="navbar__item"><a href="#" class="navbar__link active"></a></li>
+                <li class="navbar__item dropdown">
+                        <a href="#" class="navbar__link"><i class="fas fa-user"></i></a>
+                    <ul class="dropdown__menu">
+                        <li><a href="#">Update your profile</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link"> <i class="fas fa-shopping-cart"></i><span class="cart__counter">0</span></a>
+            </li>
+        </ul>
+        <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+        <div class="sandwich_content">
+            <li class="navbar__item">
+                <div class="search__container">
+                    <input type="text" class="search__input" placeholder="Search">
+                    <i class="fas fa-search search__icon"></i>
+                </div>
+            </li>
+        </div>
+    </div>
+</nav>
+{% endblock %}
